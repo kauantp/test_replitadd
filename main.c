@@ -14,7 +14,7 @@ int main() {
   printf("Menu");
   printf("1 - Criar novo");
 
-  (void)scanf("%d", &opcao);
+  scanf("%d", &opcao);
   printf("opção escolhida foi: %d", opcao);
 
   if (opcao == 1) {
