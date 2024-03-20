@@ -4,6 +4,5 @@ int main() {
   printf("added");
 
   printf("Menu");
-  printf("1 - ");
-  
+  printf("1 - Criar novo");
 }
