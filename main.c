@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 int main() {
-  int opcao=1;
+  int opcao = 1;
 
   Tarefa tarefas[TOTAL];
-
+  int i;
   int pos = 0;
 
   printf("gcc main.c && ./a.out");
@@ -14,7 +14,7 @@ int main() {
   printf("Menu");
   printf("1 - Criar novo");
 
-  scanf("%d", &opcao);
+  (void)scanf("%d", &opcao);
   printf("opção escolhida foi: %d", opcao);
 
   if (opcao == 1) {
