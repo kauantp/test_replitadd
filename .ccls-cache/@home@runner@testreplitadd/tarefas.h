@@ -5,3 +5,13 @@ typedef struct Tarefa {
 
 } Tarefa;
 
+typedef enum Erro {
+  OK,
+  ABRIR,
+  FECHAR,
+  LER,
+  ESCREVER,
+  MAX_TAREFAS,
+  SEM_TAREFAS,
+  NAO_ENCONTRADO
+} Erro;
