@@ -1,2 +1,5 @@
 #include <stdio.h>
-int main() { printf("Enter an integer: "); }
+int main() { printf("gcc main.c && ./a.out"); 
+           
+           
+           }
