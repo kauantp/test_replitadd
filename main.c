@@ -13,7 +13,7 @@ int main() {
     printf("2 - Deletar tarefa\n");
     printf("3 - Listar tarefas\n");
     printf("0 - Sair\n");
-    printf("Entre com uma opcao: ");
+    printf("Entre com uma opcao1: ");
     int i = scanf("%d", &opcao);
 
     printf("Opcao escolhida: %d\n", opcao);
