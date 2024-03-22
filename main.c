@@ -7,13 +7,12 @@ int main() {
 
   int opcao;
   do {
-    printf("gcc main.c && ./a.out");
     printf("\nMenu principal\n");
     printf("1 - Criar tarefa\n");
     printf("2 - Deletar tarefa\n");
     printf("3 - Listar tarefas\n");
     printf("0 - Sair\n");
-    printf("Entre com uma opcao1: ");
+    printf("Entre com uma opcao: ");
     int i = scanf("%d", &opcao);
 
     printf("Opcao escolhida: %d\n", opcao);
