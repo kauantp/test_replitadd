@@ -2,30 +2,32 @@
 #include <stdio.h>
 
 int main() {
-  int opcao = 1;
-
-  Tarefa tarefas[TOTAL];
-  int i;
   int pos = 0;
+  Tarefa tarefas[TOTAL];
 
-  printf("gcc main.c && ./a.out");
-  printf("added");
+  int opcao;
+  do {
+    printf("gcc main.c && ./a.out");
+    printf("\nMenu principal\n");
+    printf("1 - Criar tarefa\n");
+    printf("2 - Deletar tarefa\n");
+    printf("3 - Listar tarefas\n");
+    printf("0 - Sair\n");
+    printf("Entre com uma opcao: ");
+    int i = scanf("%d", &opcao);
 
-  printf("Menu");
-  printf("1 - Criar novo");
+    printf("Opcao escolhida: %d\n", opcao);
+    if (opcao == 1) {
+      int erro = criar(tarefas, &pos);
+    } else if (opcao == 2) {
+      int erro = deletar(tarefas, &pos);
+    } else if (opcao == 3) {
+      int erro = listar(tarefas, pos);
+    } else if (opcao == 0) {
+      printf("Sair\n");
+    } else {
+      printf("opcao invalida");
+    }
 
-  scanf("%d", &opcao);
-  printf("opção escolhida foi: %d", opcao);
-
-  if (opcao == 1) {
-    criar(tarefas, &pos);
-  } else if (opcao == 2) {
-    deletar(tarefas, &pos);
-  } else if (opcao == 3) {
-    listar(tarefas, pos);
-  } else if (opcao == 4) {
-    salvar(tarefas, pos, TOTAL);
-  } else if (opcao == 5) {
-    carregar(tarefas, &pos, TOTAL);
-  }
+  } while (opcao != 0);
 }

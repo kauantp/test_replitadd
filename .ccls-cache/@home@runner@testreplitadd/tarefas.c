@@ -1,24 +1,23 @@
 #include "tarefas.h"
 #include <stdio.h>
 
-Erro criar(Tarefa t[], int *pos) {
-  printf("foi Criado");
-  return OK;
-};
-Erro deletar(Tarefa t[], int *pos) {
-  printf("foi deletado");
-  return OK;
-};
-Erro listar(Tarefa t[], int pos) {
-  printf("foi listado");
-  return OK;
-};
-
-Erro salvar(Tarefa t[], int pos, int tamanho) {
-  printf("foi salvo");
-  return OK;
-};
-Erro carregar(Tarefa t[], int *pos, int tamanho) {
-  printf("foi carregado");
-  return OK;
-};
+int criar(Tarefa tarefas[], int *pos) {
+  printf("funcao de criar tarefa\n");
+  return 0;
+}
+int deletar(Tarefa tarefas[], int *pos) {
+  printf("funcao de deletar tarefa\n");
+  return 0;
+}
+int listar(Tarefa tarefas[], int pos) {
+  printf("funcao de listar tarefas\n");
+  return 0;
+}
+int salvar(Tarefa tarefas[], int total, int pos) {
+  printf("funcao de salvar tarefas\n");
+  return 0;
+}
+int carregar(Tarefa tarefas[], int total, int pos) {
+  printf("funcao de carregar tarefas\n");
+  return 0;
+}
